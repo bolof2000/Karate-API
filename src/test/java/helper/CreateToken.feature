@@ -5,7 +5,7 @@ Feature: Authentication token
 
     Scenario: Create a new article
         Given path 'users/login'
-        And request {"user": {"email": "bolof@gmail.com", "password": "Dammy2k100" }}
+        And request {"user": {"email": "bolof@gmail.com", "password": "Testtest" }}
         When method Post
         Then status 200
         * def AuthorizationToken = response.user.token
