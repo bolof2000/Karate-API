@@ -1,50 +1,44 @@
-21:01:23.703 karate.env system property was: null 
-21:01:23.965 request:
-1 > POST https://conduit.productionready.io/api/users/login
+21:30:06.131 karate.env system property was: null 
+21:30:06.233 >> lock acquired, begin callonce: read('/Volumes/DevelopmentEnv/Java-Base/Automation/karateAutomation/src/test/java/helper/CreateToken.feature')
+21:30:07.609 << lock released, cached callonce: read('/Volumes/DevelopmentEnv/Java-Base/Automation/karateAutomation/src/test/java/helper/CreateToken.feature')
+21:30:07.635 request:
+1 > POST https://conduit.productionready.io/api/articles
 1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ3NTQxLCJ1c2VybmFtZSI6ImJvbG9mMjAwMCIsImV4cCI6MTYyMDI3NTQwN30.TqxJW1EGa6kyR4Qky_d1A_bm-DJ_7HVTZM_QYg5qnUA
 1 > Connection: Keep-Alive
-1 > Content-Length: 60
+1 > Content-Length: 141
 1 > Content-Type: application/json; charset=UTF-8
 1 > Host: conduit.productionready.io
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.10)
-{"user":{"email":"bolof@gmail.com","password":"Dammy2k100"}}
+{"article":{"tagList":[],"title":"from karate","description":"test this data creation from karate","body":"welcome to karate testing here "}}
 
-21:01:24.648 response time in milliseconds: 681.06
+21:30:08.064 response time in milliseconds: 427.06
 1 < 200
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 62c0ec1f5cae0368-ORD
+1 < CF-RAY: 62c116338fb1036c-ORD
 1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 07 Mar 2021 04:01:24 GMT
-1 < ETag: W/"1c78ac98b6c4cb9ba2b21411b5fde66b"
+1 < Date: Sun, 07 Mar 2021 04:30:08 GMT
+1 < ETag: W/"761ff29d50e7c28b6b10a19b0c2fcc57"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=MKQ7PNPHXgbVzxw0wsrtNsV1tN8KqBKUu0WvJy%2FUOW%2Fucump9K6cNXFplp1dec1BMD4JQaVb5YqUTjTHXjjHakIaLEti40NYQ7JtMMI951f0e7vkUAj9kJVubA%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=dw7ypNKcX38Yyiu7x%2BC3kG4VYN%2BO6Esu8dQJnmXQ9BOvlo2PDQjs0MUDmWyXmbF9QwcU39bxhYRjKBqfNNIwEgG8OIF77PU5lU%2FkXE6SdLHArUSOZRpK%2F5%2FRjg%3D%3D"}]}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=def5c87c7aa27865fb5d90faaf126f2ae1615089684; expires=Tue, 06-Apr-21 04:01:24 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Set-Cookie: __cfduid=d6e238fc2cf09fc191483cb7f4a5f820a1615091407; expires=Tue, 06-Apr-21 04:30:07 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
 1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
 1 < Vary: Origin
 1 < X-Content-Type-Options: nosniff
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Powered-By: Phusion Passenger 4.0.60
-1 < X-Request-Id: 6be6411a-3ff0-4c6b-a8ad-289a09818deb
-1 < X-Runtime: 0.082844
+1 < X-Request-Id: 755a85b9-0aae-4058-86ed-57188184de29
+1 < X-Runtime: 0.084704
 1 < X-XSS-Protection: 1; mode=block
-1 < cf-request-id: 08ac71e79a0000036846283000000001
-{"user":{"id":147541,"email":"bolof@gmail.com","createdAt":"2021-03-07T02:31:38.841Z","updatedAt":"2021-03-07T02:31:38.847Z","username":"bolof2000","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ3NTQxLCJ1c2VybmFtZSI6ImJvbG9mMjAwMCIsImV4cCI6MTYyMDI3MzY4NH0.h5sT-zEIIictxrEEJBUnO2KeiSLMOlaH87571M9NRCA"}}
+1 < cf-request-id: 08ac8c34330000036c6a28b000000001
+{"article":{"title":"from karate","slug":"from-karate-wpdq4x","body":"welcome to karate testing here ","createdAt":"2021-03-07T04:30:08.100Z","updatedAt":"2021-03-07T04:30:08.100Z","tagList":[],"description":"test this data creation from karate","author":{"username":"bolof2000","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}
 
-21:01:24.665 request:
-2 > POST https://conduit.productionready.io/api/articles
-2 > Accept-Encoding: gzip,deflate
-2 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ3NTQxLCJ1c2VybmFtZSI6ImJvbG9mMjAwMCIsImV4cCI6MTYyMDI3MzY4NH0.h5sT-zEIIictxrEEJBUnO2KeiSLMOlaH87571M9NRCA
-2 > Connection: Keep-Alive
-2 > Content-Length: 141
-2 > Content-Type: application/json; charset=UTF-8
-2 > Cookie: __cfduid=def5c87c7aa27865fb5d90faaf126f2ae1615089684
-2 > Host: conduit.productionready.io
-2 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.10)
-{"article":{"tagList":[],"title":"from karate","description":"test this data creation from karate","body":"welcome to karate testing here "}}
+
 
 21:01:25.130 response time in milliseconds: 463.71
 2 < 200

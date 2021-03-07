@@ -9,4 +9,4 @@ Feature: Authentication token
         When method Post
         Then status 200
         * def AuthorizationToken = response.user.token
-        And match response.user.username == 'bolof2000'
+       

@@ -4,12 +4,9 @@ Feature: Articles
         Given url 'https://conduit.productionready.io/api/'
 
     Scenario: Create a new article
-        Given path 'users/login'
-        And request {"user": {"email": "bolof@gmail.com", "password": "Dammy2k100" }}
-        When method Post
-        Then status 200
-        * def token = response.user.token
-        And match response.user.username == 'bolof2000'
+        
+        * def tokenResponse = callonce read('/Volumes/DevelopmentEnv/Java-Base/Automation/karateAutomation/src/test/java/helper/CreateToken.feature')
+        * def token = tokenResponse.AuthorizationToken
 
 
         Given header Authorization = 'Token ' + token
@@ -18,3 +15,5 @@ Feature: Articles
         When method Post
         Then status 200
         And match response.article.title == 'from karate'
+        
+        

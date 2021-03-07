@@ -45,7 +45,7 @@
   .embed img { width: 100%; }
 </style>
         
-        <title>conduit.feature.Articles</title>
+        <title>conduit.helper.CreateToken</title>
         <script>window.onload = function() {
   var possibleModes = ['failed', 'skipped', 'passed'];
   var tests = {};
@@ -173,37 +173,22 @@
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
-                    <div class="time-cell passed">0.005902</div>
+                    <div class="time-cell passed">0.000227</div>
                 </div>
-                <div class="preformatted">21:30:06.131 karate.env system property was: null</div>
+                <div class="preformatted">21:22:57.433 karate.env system property was: null</div>
                 <div class="step-row">
-                    <div class="step-cell passed">* def tokenResponse = callonce read('/Volumes/DevelopmentEnv/Java-Base/Automation/karateAutomation/src/test/java/helper/CreateToken.feature')</div>
-                    <div class="time-cell passed">1.377144</div>
+                    <div class="step-cell passed">Given path 'users/login'</div>
+                    <div class="time-cell passed">0.000167</div>
                 </div>
-                <div class="preformatted">21:30:06.233 &gt;&gt; lock acquired, begin callonce: read('/Volumes/DevelopmentEnv/Java-Base/Automation/karateAutomation/src/test/java/helper/CreateToken.feature')
-21:30:07.609 &lt;&lt; lock released, cached callonce: read('/Volumes/DevelopmentEnv/Java-Base/Automation/karateAutomation/src/test/java/helper/CreateToken.feature')</div>
                 <div class="step-row">
-                    <div class="step-cell passed">/Volumes/DevelopmentEnv/Java-Base/Automation/karateAutomation/src/test/java/helper/CreateToken.feature</div>
-                    <div class="time-cell passed">1.35434</div>
+                    <div class="step-cell passed">And request {"user": {"email": "bolof@gmail.com", "password": "Testtest" }}</div>
+                    <div class="time-cell passed">0.000179</div>
                 </div>
-                <div class="scenario-steps-nested">
-                    <div class="step-row">
-                        <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
-                        <div class="time-cell passed">0.003921</div>
-                    </div>
-                    <div class="step-row">
-                        <div class="step-cell passed">Given path 'users/login'</div>
-                        <div class="time-cell passed">0.004891</div>
-                    </div>
-                    <div class="step-row">
-                        <div class="step-cell passed">And request {"user": {"email": "bolof@gmail.com", "password": "Testtest" }}</div>
-                        <div class="time-cell passed">0.00031</div>
-                    </div>
-                    <div class="step-row">
-                        <div class="step-cell passed">When method Post</div>
-                        <div class="time-cell passed">1.329746</div>
-                    </div>
-                    <div class="preformatted">21:30:06.683 request:
+                <div class="step-row">
+                    <div class="step-cell passed">When method Post</div>
+                    <div class="time-cell passed">0.467556</div>
+                </div>
+                <div class="preformatted">21:22:57.438 request:
 1 &gt; POST https://conduit.productionready.io/api/users/login
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -213,103 +198,38 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.10)
 {"user":{"email":"bolof@gmail.com","password":"Testtest"}}
 
-21:30:07.589 response time in milliseconds: 902.53
+21:22:57.903 response time in milliseconds: 463.26
 1 &lt; 200
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 62c1162f19f23fa3-ORD
+1 &lt; CF-RAY: 62c10bb30e2efece-IAH
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sun, 07 Mar 2021 04:30:07 GMT
-1 &lt; ETag: W/"05d2d29739b0d5a84c6c0b5e43d0e3b4"
+1 &lt; Date: Sun, 07 Mar 2021 04:22:57 GMT
+1 &lt; ETag: W/"3f4dcdfba5af4f149d42c84a30ebec9c"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
-1 &lt; Report-To: {"max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=q3hTcS1JgIseaZPfhwncN2X3UgzXlDBXY41qxRBCBUzyeEojpsA478srIAGnOsjvw6nmMvDv6BN8zk6V3j0sX5Ra5ZyVjBF5ty4W94gWijucd3LwJOoeBQkzGg%3D%3D"}],"group":"cf-nel"}
+1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=UJQMQ58km%2BR%2Ft2Wc6yidtOjBeSp3KVYqXld%2FsDND6mrg855M55M%2FYzEP5%2BQnBCMp0lw6GcEV4cLsuNRVXZ5DVAfFamUDL9wnFix2dySuiDVnIcJQJtEDIpZYRQ%3D%3D"}],"max_age":604800,"group":"cf-nel"}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d3d81e7cb34f91895ef04ada4a29d36f81615091407; expires=Tue, 06-Apr-21 04:30:07 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Set-Cookie: __cfduid=d12962fd7df3fb53da42d77b05e2004671615090977; expires=Tue, 06-Apr-21 04:22:57 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
 1 &lt; Status: 200 OK
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Origin
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Powered-By: Phusion Passenger 4.0.60
-1 &lt; X-Request-Id: b7aec2b3-0d62-4633-8f61-1c5f4f7bda95
-1 &lt; X-Runtime: 0.094613
+1 &lt; X-Request-Id: 1ceb5730-2f28-44d9-8492-e72cda546ce3
+1 &lt; X-Runtime: 0.081047
 1 &lt; X-XSS-Protection: 1; mode=block
-1 &lt; cf-request-id: 08ac8c317300003fa317120000000001
-{"user":{"id":147541,"email":"bolof@gmail.com","createdAt":"2021-03-07T02:31:38.841Z","updatedAt":"2021-03-07T04:10:22.741Z","username":"bolof2000","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ3NTQxLCJ1c2VybmFtZSI6ImJvbG9mMjAwMCIsImV4cCI6MTYyMDI3NTQwN30.TqxJW1EGa6kyR4Qky_d1A_bm-DJ_7HVTZM_QYg5qnUA"}}</div>
-                    <div class="step-row">
-                        <div class="step-cell passed">Then status 200</div>
-                        <div class="time-cell passed">0.000032</div>
-                    </div>
-                    <div class="step-row">
-                        <div class="step-cell passed">* def AuthorizationToken = response.user.token</div>
-                        <div class="time-cell passed">0.01544</div>
-                    </div>
-                </div>
-                <div class="step-row">
-                    <div class="step-cell passed">* def token = tokenResponse.AuthorizationToken</div>
-                    <div class="time-cell passed">0.010059</div>
-                </div>
-                <div class="step-row">
-                    <div class="step-cell passed">Given header Authorization = 'Token ' + token</div>
-                    <div class="time-cell passed">0.007501</div>
-                </div>
-                <div class="step-row">
-                    <div class="step-cell passed">Given path 'articles'</div>
-                    <div class="time-cell passed">0.004318</div>
-                </div>
-                <div class="step-row">
-                    <div class="step-cell passed">And request {"article": { "tagList": [],"title": "from karate","description": "test this data creation from karate","body": "welcome to karate testing here "}}</div>
-                    <div class="time-cell passed">0.000234</div>
-                </div>
-                <div class="step-row">
-                    <div class="step-cell passed">When method Post</div>
-                    <div class="time-cell passed">0.431428</div>
-                </div>
-                <div class="preformatted">21:30:07.635 request:
-1 &gt; POST https://conduit.productionready.io/api/articles
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ3NTQxLCJ1c2VybmFtZSI6ImJvbG9mMjAwMCIsImV4cCI6MTYyMDI3NTQwN30.TqxJW1EGa6kyR4Qky_d1A_bm-DJ_7HVTZM_QYg5qnUA
-1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 141
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Host: conduit.productionready.io
-1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.10)
-{"article":{"tagList":[],"title":"from karate","description":"test this data creation from karate","body":"welcome to karate testing here "}}
-
-21:30:08.064 response time in milliseconds: 427.06
-1 &lt; 200
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 62c116338fb1036c-ORD
-1 &lt; Cache-Control: max-age=0, private, must-revalidate
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sun, 07 Mar 2021 04:30:08 GMT
-1 &lt; ETag: W/"761ff29d50e7c28b6b10a19b0c2fcc57"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
-1 &lt; Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=dw7ypNKcX38Yyiu7x%2BC3kG4VYN%2BO6Esu8dQJnmXQ9BOvlo2PDQjs0MUDmWyXmbF9QwcU39bxhYRjKBqfNNIwEgG8OIF77PU5lU%2FkXE6SdLHArUSOZRpK%2F5%2FRjg%3D%3D"}]}
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d6e238fc2cf09fc191483cb7f4a5f820a1615091407; expires=Tue, 06-Apr-21 04:30:07 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
-1 &lt; Status: 200 OK
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Origin
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-Frame-Options: SAMEORIGIN
-1 &lt; X-Powered-By: Phusion Passenger 4.0.60
-1 &lt; X-Request-Id: 755a85b9-0aae-4058-86ed-57188184de29
-1 &lt; X-Runtime: 0.084704
-1 &lt; X-XSS-Protection: 1; mode=block
-1 &lt; cf-request-id: 08ac8c34330000036c6a28b000000001
-{"article":{"title":"from karate","slug":"from-karate-wpdq4x","body":"welcome to karate testing here ","createdAt":"2021-03-07T04:30:08.100Z","updatedAt":"2021-03-07T04:30:08.100Z","tagList":[],"description":"test this data creation from karate","author":{"username":"bolof2000","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}</div>
+1 &lt; cf-request-id: 08ac85a3e80000fece4fa62000000001
+{"user":{"id":147541,"email":"bolof@gmail.com","createdAt":"2021-03-07T02:31:38.841Z","updatedAt":"2021-03-07T04:10:22.741Z","username":"bolof2000","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ3NTQxLCJ1c2VybmFtZSI6ImJvbG9mMjAwMCIsImV4cCI6MTYyMDI3NDk3N30.mHhoBB64wE-gDenkMgDrLRUUrgIxVUKOQppTRVRs2GA"}}</div>
                 <div class="step-row">
                     <div class="step-cell passed">Then status 200</div>
-                    <div class="time-cell passed">0.000016</div>
+                    <div class="time-cell passed">0.000017</div>
                 </div>
                 <div class="step-row">
-                    <div class="step-cell passed">And match response.article.title == 'from karate'</div>
-                    <div class="time-cell passed">0.006868</div>
+                    <div class="step-cell passed">* def AuthorizationToken = response.user.token</div>
+                    <div class="time-cell passed">0.001118</div>
                 </div>
             </div>
         </div>

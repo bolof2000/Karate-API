@@ -1,0 +1,36 @@
+21:30:06.683 request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 58
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.10)
+{"user":{"email":"bolof@gmail.com","password":"Testtest"}}
+
+21:30:07.589 response time in milliseconds: 902.53
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 62c1162f19f23fa3-ORD
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 07 Mar 2021 04:30:07 GMT
+1 < ETag: W/"05d2d29739b0d5a84c6c0b5e43d0e3b4"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=q3hTcS1JgIseaZPfhwncN2X3UgzXlDBXY41qxRBCBUzyeEojpsA478srIAGnOsjvw6nmMvDv6BN8zk6V3j0sX5Ra5ZyVjBF5ty4W94gWijucd3LwJOoeBQkzGg%3D%3D"}],"group":"cf-nel"}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d3d81e7cb34f91895ef04ada4a29d36f81615091407; expires=Tue, 06-Apr-21 04:30:07 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: b7aec2b3-0d62-4633-8f61-1c5f4f7bda95
+1 < X-Runtime: 0.094613
+1 < X-XSS-Protection: 1; mode=block
+1 < cf-request-id: 08ac8c317300003fa317120000000001
+{"user":{"id":147541,"email":"bolof@gmail.com","createdAt":"2021-03-07T02:31:38.841Z","updatedAt":"2021-03-07T04:10:22.741Z","username":"bolof2000","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ3NTQxLCJ1c2VybmFtZSI6ImJvbG9mMjAwMCIsImV4cCI6MTYyMDI3NTQwN30.TqxJW1EGa6kyR4Qky_d1A_bm-DJ_7HVTZM_QYg5qnUA"}}
+
