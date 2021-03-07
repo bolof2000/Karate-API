@@ -1,0 +1,33 @@
+21:01:25.250 karate.env system property was: null 
+21:01:25.254 request:
+1 > GET https://conduit.productionready.io/api/tags
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.10)
+
+21:01:26.454 response time in milliseconds: 1198.70
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 62c0ec26691003c4-ORD
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 07 Mar 2021 04:01:26 GMT
+1 < ETag: W/"324fbeaffe650e52f601c952948fb1e2"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=vnYuFbuMCoV0ZmorzzhHQUxrJXXBKlXUvQeCqePj2%2BomEf%2FLUeiS6zmaAy23okKCXrHJlQEeanodSPlLY4tfGA4kh8D5AciX6KxXCGrsCcQFShkPA7v7HCLqOQ%3D%3D"}],"max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dd84610f49e6adb55b4f6edb1fc929d7d1615089685; expires=Tue, 06-Apr-21 04:01:25 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 200 OK
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 19d26416-65f7-4b65-9059-4de3169186fa
+1 < X-Runtime: 0.891498
+1 < X-XSS-Protection: 1; mode=block
+1 < cf-request-id: 08ac71ec02000003c42c378000000001
+{"tags":["‌","‌‌","‌‌‌","‌‌‌‌","‌‌‌‌‌‌‌","‌‌‌‌‌","‌‌‌‌‌‌‌‌","‌‌‌‌‌‌‌‌‌‌‌","‌‌‌‌‌‌","‌‌‌‌‌‌‌‌‌‌","HuManIty","Hu‌Man‌Ity","Gandhi","HITLER","SIDA","BlackLivesMatter","Black‌Lives‌Matter","test","dragons","butt"]}
+
